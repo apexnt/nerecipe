@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/feedFragment"
-        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:icon="@drawable/ic_baseline_ramen_dining_24"
         android:title="@string/recipes" />
     <item
         android:id="@+id/favoriteFragment"

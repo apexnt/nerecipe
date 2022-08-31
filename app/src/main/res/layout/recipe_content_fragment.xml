@@ -47,17 +47,18 @@
             app:layout_constraintStart_toStartOf="@id/recipe_author_edit"
             app:layout_constraintTop_toBottomOf="@id/recipe_author_edit" />
 
-        <com.google.android.material.button.MaterialButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/saveButton"
-            style="@style/Widget.AppTheme.OptionsButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_spacing"
             android:layout_marginTop="@dimen/common_spacing"
-            android:maxHeight="24dp"
-            app:icon="@android:drawable/ic_menu_save"
-            app:iconGravity="textStart"
-            app:layout_constraintEnd_toEndOf="@id/recipe_author_edit"
-            app:layout_constraintTop_toBottomOf="@id/edit_category" />
+            android:contentDescription="@string/add_recipe"
+            app:layout_constraintEnd_toEndOf="@id/edit_category"
+            app:layout_constraintStart_toStartOf="@id/edit_category"
+            app:layout_constraintTop_toBottomOf="@id/edit_category"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_baseline_check_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
