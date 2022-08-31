@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.RecipeContentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_spacing">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipe_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:hint="@string/edit_recipe_title"
+            android:singleLine="true"
+            android:textAppearance="@style/Widget.AppTheme.Text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipe_author_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:hint="@string/edit_recipe_author"
+            android:singleLine="true"
+            android:textAppearance="@style/Widget.AppTheme.Text"
+            app:layout_constraintEnd_toEndOf="@id/recipe_title_edit"
+            app:layout_constraintStart_toStartOf="@id/recipe_title_edit"
+            app:layout_constraintTop_toBottomOf="@id/recipe_title_edit" />
+
+        <Spinner
+            android:id="@+id/edit_category"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:entries="@array/category_names"
+            app:layout_constraintEnd_toEndOf="@id/recipe_author_edit"
+            app:layout_constraintStart_toStartOf="@id/recipe_author_edit"
+            app:layout_constraintTop_toBottomOf="@id/recipe_author_edit" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            style="@style/Widget.AppTheme.OptionsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_spacing"
+            android:maxHeight="24dp"
+            app:icon="@android:drawable/ic_menu_save"
+            app:iconGravity="textStart"
+            app:layout_constraintEnd_toEndOf="@id/recipe_author_edit"
+            app:layout_constraintTop_toBottomOf="@id/edit_category" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+

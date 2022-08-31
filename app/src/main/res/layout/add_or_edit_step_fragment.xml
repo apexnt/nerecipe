@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.StepContentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/step_content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_spacing"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_marginEnd="@dimen/common_spacing"
+            android:textAppearance="@style/Widget.AppTheme.Text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Описание шага рецепта" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_image_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/select_image"
+            app:layout_constraintEnd_toEndOf="@id/step_content_edit"
+            app:layout_constraintStart_toStartOf="@id/step_content_edit"
+            app:layout_constraintTop_toBottomOf="@id/step_content_edit" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/save_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_spacing"
+            android:contentDescription="@string/add_recipe"
+            app:layout_constraintEnd_toEndOf="@id/add_image_step"
+            app:layout_constraintStart_toStartOf="@id/add_image_step"
+            app:layout_constraintTop_toBottomOf="@id/add_image_step"
+            app:srcCompat="@drawable/ic_baseline_check_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

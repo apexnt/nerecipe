@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Ne Recipe</string>
+
+    <string name="european">European</string>
+    <string name="asian">Asian</string>
+    <string name="pan_asian">Pan_asian</string>
+    <string name="eastern">Eastern</string>
+    <string name="american">American</string>
+    <string name="russian">Russian</string>
+    <string name="mediterranean">Mediterranean</string>
+
+
+    <string name="runtime_exception">No such category</string>
+
+
+    <string name="select_image">Select image</string>
+
+
+    <string name="remove_recipe">Remove</string>
+    <string name="edit_recipe">Edit</string>
+
+
+    <string name="search">Search</string>
+
+
+
+    <string name="edit_recipe_title">Enter title</string>
+    <string name="edit_recipe_author">Enter author</string>
+    <string name="category">Select category</string>
+
+
+    <string name="recipes">Recipes</string>
+    <string name="favorites">Favorites</string>
+
+
+    <string-array name="category_names">
+        <item>European</item>
+        <item>Asian</item>
+        <item>Pan-Asian</item>
+        <item>Eastern</item>
+        <item>American</item>
+        <item>Russian</item>
+        <item>Mediterranean</item>
+    </string-array>
+
+    <string name="filterTextFragment">Filter</string>
+
+    <string name="empty_state_text">There is nothing here</string>
+    <string name="empty_state_text_done">Please change the filter or add a recipe</string>
+    <string name="add_recipe">Add recipe</string>
+    <string name="empty_state_text_done_favorite">Please add a recipe to your favorites</string>
+
+    <string name="empty_state_text_favorite">Favorites is empty</string>
+
+    <string name="empty_state_text_step">No cooking steps</string>
+    <string name="please_add">Please add the recipe preparation step by clicking +</string>
+
+    <string name="empty_fields_recipe">Recipe has empty fields!</string>
+    <string name="empty_fields_step">Step has empty fields!</string>
+    <string name="empty_category_recipe">Choose category</string>
+
+
+
+
+</resources>
