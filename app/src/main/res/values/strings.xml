@@ -22,7 +22,7 @@
 
     <string name="search">Search</string>
 
-
+    <string name="step_number">Step №</string>
 
     <string name="edit_recipe_title">Enter title</string>
     <string name="edit_recipe_author">Enter author</string>

@@ -23,7 +23,6 @@ class CurrentRecipeFragment : Fragment() {
 
     private lateinit var currentRecipe: Recipe
 
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

@@ -34,6 +34,7 @@ internal class RecipesAdapter(
 
         init {
             binding.favorite.setOnClickListener { listener.onAddFavoriteClicked(recipe) }
+            binding.deleteRecipeInList.setOnClickListener { listener.onRemoveClicked(recipe) }
             binding.root.setOnClickListener { listener.onRecipeClicked(recipe) }
         }
 
@@ -54,13 +55,9 @@ internal class RecipesAdapter(
         override fun areItemsTheSame(oldItem: Recipe, newItem: Recipe) =
             oldItem.id == newItem.id
 
-
         override fun areContentsTheSame(oldItem: Recipe, newItem: Recipe) =
             oldItem.content == newItem.content
     }
-
-
-    val differ = AsyncListDiffer(this, DiffCallback)
 
     fun moveItem(from: Int, to: Int) {
         val list = currentList.toMutableList()

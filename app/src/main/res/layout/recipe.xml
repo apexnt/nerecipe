@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:singleLine="true"
+        android:layout_marginTop="@dimen/common_spacing"
         android:textAppearance="@style/Widget.AppTheme.Text"
         app:layout_constraintBottom_toTopOf="@id/category_recipe"
         app:layout_constraintEnd_toEndOf="@id/title_recipe"
@@ -44,6 +45,7 @@
         android:ellipsize="end"
         android:singleLine="true"
         android:textAppearance="@style/Widget.AppTheme.Text"
+        android:layout_marginTop="@dimen/common_spacing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/title_recipe"
         app:layout_constraintStart_toStartOf="@id/title_recipe"
@@ -53,6 +55,17 @@
         tools:text="Категория" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete_recipe_in_list"
+        style="@style/Widget.AppTheme.LikeCheckbox"
+        android:layout_width="@dimen/icon_button_min_size"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        app:icon="@drawable/ic_baseline_delete_forever_24"
+        app:iconGravity="textStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/favorite"
         style="@style/Widget.AppTheme.LikeCheckbox"
         android:layout_width="@dimen/icon_button_min_size"
@@ -60,6 +73,7 @@
         android:checkable="true"
         app:icon="@drawable/ic_like_check_box_24dp"
         app:iconGravity="textStart"
+        android:layout_marginTop="@dimen/size_8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

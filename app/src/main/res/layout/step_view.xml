@@ -6,28 +6,17 @@
     android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/step_title"
+        android:id="@+id/step_content"
         android:layout_width="@dimen/size_0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/common_spacing"
-        android:layout_marginTop="@dimen/size_8dp"
+        android:layout_marginTop="@dimen/common_spacing"
         android:layout_marginEnd="@dimen/common_spacing"
         android:textAppearance="@style/Widget.AppTheme.Text"
         app:layout_constraintEnd_toStartOf="@id/options_step"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Наименование шага" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/step_content"
-        android:layout_width="@dimen/size_0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size_8dp"
-        android:textAppearance="@style/Widget.AppTheme.Text"
-        app:layout_constraintStart_toStartOf="@id/step_title"
-        app:layout_constraintTop_toBottomOf="@id/step_title"
-        app:layout_constraintEnd_toEndOf="@id/step_title"
-        tools:text="Описание шага рецепта" />
+        tools:text="Описание шага" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/options_step"
@@ -44,7 +33,8 @@
         android:id="@+id/image_step"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/size_8dp"
+        android:layout_marginTop="@dimen/common_spacing"
+        android:layout_marginBottom="@dimen/common_spacing"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:visibility="gone"

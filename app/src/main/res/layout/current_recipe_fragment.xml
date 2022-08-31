@@ -88,7 +88,7 @@
         app:layout_constraintTop_toTopOf="@id/header_barrier"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="32dp"
-        tools:listitem="@layout/cooking_steps" />
+        tools:listitem="@layout/step_view" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/footer"
