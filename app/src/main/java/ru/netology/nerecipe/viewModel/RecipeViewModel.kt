@@ -129,6 +129,7 @@ class RecipeViewModel(
     override fun onEditClicked(recipe: Recipe) {
         currentRecipe.value = recipe
         navigateToRecipeEditOrAddScreenEvent.value = recipe
+
     }
 
     override fun onRecipeClicked(recipe: Recipe) {

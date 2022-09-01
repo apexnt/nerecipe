@@ -66,6 +66,7 @@ class RecipeContentFragment : Fragment() {
             } as Recipe
 
             binding.recipeTitleEdit.setText(currentRecipe.title)
+            binding.recipeAuthorEdit.setText(currentRecipe.author)
 
             val categoriesList = resources.getStringArray(R.array.category_names)
             val numberCategory = categoriesList.indexOf(currentRecipe.category)
