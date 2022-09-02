@@ -28,7 +28,9 @@ class StepContentFragment : Fragment() {
                     Intent.FLAG_GRANT_READ_URI_PERMISSION
                 )
             }
-            viewModel.currentImageStep.value = uri.toString()
+            if (args.initialStepText != null) {
+                uri.toString().also { viewModel.currentStep.value?.picture = it }
+            } else viewModel.currentImageStep.value = uri.toString()
         }
 
     override fun onCreateView(

@@ -7,5 +7,5 @@ data class Step(
     val idStep: Long,
     val idRecipe: Long,
     val stepText: String,
-    val picture: String = ""
+    var picture: String = ""
 )

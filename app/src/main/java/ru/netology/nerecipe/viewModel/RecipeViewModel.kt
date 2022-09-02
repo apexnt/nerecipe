@@ -29,7 +29,7 @@ class RecipeViewModel(
     val data by repository::data
 
     private val currentRecipe = MutableLiveData<Recipe?>(null)
-    private val currentStep = MutableLiveData<Step?>(null)
+     val currentStep = MutableLiveData<Step?>(null)
 
     val currentImageStep = MutableLiveData<String>("")
 
