@@ -38,7 +38,6 @@ class RecipeViewModel(
         repository.getFilteredList(filter)
     }
 
-
     val navigateToRecipeEditOrAddScreenEvent = SingleLiveEvent<Recipe>()
     val navigateToCurrentRecipeScreenEvent = SingleLiveEvent<Recipe>()
     val navigateToStepEditScreenEvent = SingleLiveEvent<Step>()
@@ -64,19 +63,16 @@ class RecipeViewModel(
 
     fun onSaveButtonStepClicked(textStep: String) {
         if (textStep.isBlank()) return
-
         val stepForSave = currentStep.value?.copy(
             stepText = textStep,
-            picture = currentImageStep.value.toString()
+            picture = currentStep.value!!.picture
         ) ?: Step(
             idStep = RecipeRepository.NEW_STEP_ID,
             idRecipe = currentRecipe.value?.id ?: 0,
             stepText = textStep,
             picture = currentImageStep.value.toString()
         )
-
         repository.saveStep(stepForSave)
-
         currentStep.value = null
         currentRecipe.value = null
         currentImageStep.value = ""
